@@ -31,8 +31,8 @@ const pins = [
         title: "bakery",
         description: "cup cake",
         imageUrl: "C:/my projects/pinterest/images/Screenshot 2024-12-15 184958.png",
-        likes: 192,
-        comments: 20
+        likes: 92,
+        comments: 10
     },
 
     {
@@ -40,8 +40,8 @@ const pins = [
         title: "taperecorder",
         description: "good vibes",
         imageUrl: "C:/my projects/pinterest/images/Screenshot 2024-12-15 184958.png",
-        likes: 192,
-        comments: 20
+        likes: 292,
+        comments: 50
     },
 
     {
@@ -58,16 +58,16 @@ const pins = [
         title: "festival",
         description: "x-mas",
         imageUrl: "https://wallpapercave.com/wp/wp2663630.jpg",
-        likes: 192,
-        comments: 20
+        likes: 199,
+        comments: 28
     },
      
     {
         id: 8,
         title: "asthetic",
         imageUrl: "https://i.pinimg.com/originals/59/b8/c8/59b8c8622c076c5dc7bac0dd591c712c.gif",
-        likes: 192,
-        comments: 20
+        likes: 121,
+        comments: 25
     },
 
     {
@@ -75,20 +75,20 @@ const pins = [
         title: "motivation",
         description: "personality",
         imageUrl: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXYyeHJlcnBrdWVyeGxoa2NocWFzNG5tbXU1ZW4zbzV6c2ttMW9zMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pOHwyaBU4zG80/giphy.webp",
-        likes: 192,
-        comments: 20
+        likes: 125,
+        comments: 19
     }
     
 ];
 
 // Pin Grid Layout
-let currentLayout = 'masonry'; // or 'grid'
+let currentLayout = 'masonry'; 
 
 function createPinElement(pin) {
     const pinElement = document.createElement('div');
     pinElement.className = 'pin';
     
-    const isNew = pin.id === 1; // Example condition for new pins
+    const isNew = pin.id === 1; 
     
     pinElement.innerHTML = `
         <div class="pin-image">

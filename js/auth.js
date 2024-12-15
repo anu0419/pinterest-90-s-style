@@ -10,7 +10,7 @@ const mainContent = document.getElementById('mainContent');
 const welcomeMessage = document.getElementById('welcomeMessage');
 const logoutButton = document.getElementById('logoutButton');
 
-// Login Handler
+// Login  page Handle
 loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const username = document.getElementById('username').value;
@@ -21,11 +21,10 @@ loginForm.addEventListener('submit', (e) => {
         return;
     }
 
-    // Simple login (in a real app, you'd validate against a server)
     login(username);
 });
 
-// Login Function
+
 function login(username) {
     currentUser = { username };
     loginWindow.classList.add('hidden');
@@ -34,7 +33,7 @@ function login(username) {
     errorMessage.classList.add('hidden');
 }
 
-// Logout Handler
+
 logoutButton.addEventListener('click', () => {
     currentUser = null;
     mainContent.classList.add('hidden');
@@ -43,7 +42,7 @@ logoutButton.addEventListener('click', () => {
     document.getElementById('password').value = '';
 });
 
-// Error Display
+
 function showError(message) {
     errorMessage.textContent = message;
     errorMessage.classList.remove('hidden');

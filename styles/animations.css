@@ -8,7 +8,7 @@
     animation: blink 1s step-end infinite;
 }
 
-/* Rainbow Text Animation */
+/* Text Animation for welcome box*/
 @keyframes rainbow {
     0% { color: #ff0000; }
     17% { color: #ff00ff; }
