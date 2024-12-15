@@ -25,7 +25,60 @@ const pins = [
         likes: 192,
         comments: 48
     },
-    // Add more pins as needed
+    
+    {
+        id: 4,
+        title: "bakery",
+        description: "cup cake",
+        imageUrl: "C:/my projects/pinterest/images/Screenshot 2024-12-15 184958.png",
+        likes: 192,
+        comments: 20
+    },
+
+    {
+        id: 5,
+        title: "taperecorder",
+        description: "good vibes",
+        imageUrl: "C:/my projects/pinterest/images/Screenshot 2024-12-15 184958.png",
+        likes: 192,
+        comments: 20
+    },
+
+    {
+        id: 6,
+        title: "taperecorder",
+        description: "good vibes",
+        imageUrl: "C:/my projects/pinterest/images/Screenshot 2024-12-15 185517.png",
+        likes: 192,
+        comments: 20
+    },
+
+    {
+        id: 7,
+        title: "festival",
+        description: "x-mas",
+        imageUrl: "https://wallpapercave.com/wp/wp2663630.jpg",
+        likes: 192,
+        comments: 20
+    },
+     
+    {
+        id: 8,
+        title: "asthetic",
+        imageUrl: "https://i.pinimg.com/originals/59/b8/c8/59b8c8622c076c5dc7bac0dd591c712c.gif",
+        likes: 192,
+        comments: 20
+    },
+
+    {
+        id: 9,
+        title: "motivation",
+        description: "personality",
+        imageUrl: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXYyeHJlcnBrdWVyeGxoa2NocWFzNG5tbXU1ZW4zbzV6c2ttMW9zMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pOHwyaBU4zG80/giphy.webp",
+        likes: 192,
+        comments: 20
+    }
+    
 ];
 
 // Pin Grid Layout
