@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroPins - Best viewed in Netscape Navigator</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/patterns.css">
+</head>
+<body>
+    <!-- Login Window -->
+    <div id="loginWindow" class="modal">
+        <div class="win95-window">
+            <div class="title-bar">
+                <div class="title-bar-text">
+                    <img src="C:/my projects/pinterest/images/welcome.gif" alt="User" class="title-icon">
+                    Login to pinterest
+                </div>
+                <button class="close-button">×</button>
+            </div>
+            <div class="window-content">
+                <div class="computer-gif">
+                    <img src="" alt="Computer" class="retro-gif">
+                </div>
+                <form id="loginForm" class="login-form">
+                    <div class="form-group">
+                        <label>
+                            Username:
+                        </label>
+                        <input type="text" id="username" class="win95-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                           
+                            Password:
+                        </label>
+                        <input type="password" id="password" class="win95-input" required>
+                    </div>
+                    <div id="errorMessage" class="error-message hidden"></div>
+                    <div class="button-group">
+                        <button type="submit" class="win95-button">OK</button>
+                        <button type="button" class="win95-button">Cancel</button>
+                    </div>
+                </form>
+                <div class="status-bar">
+                    <p>Running Windows 95...</p>
+                    <img src="https://gifcities.org/api/gif/line_fire" alt="Divider" class="flame-line">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="hidden">
+        <header class="win95-header">
+            <div class="logo">
+                <img src="https://gifcities.org/api/gif/pin" alt="Logo" class="logo-icon">
+                <h1>pinterest</h1>
+            </div>
+            <nav>
+                <span id="welcomeMessage"></span>
+                <button id="layoutToggle" class="win95-button">
+                    <img src="https://gifcities.org/api/gif/grid" alt="Grid" class="button-icon">
+                </button>
+                <button id="logoutButton" class="win95-button">Logout</button>
+            </nav>
+        </header>
+
+        <div class="construction-banner">
+            <marquee>🚧 explore more 🚧</marquee>
+        </div>
+
+        <main>
+            <div class="welcome-box">
+                <img src="https://gifcities.org/api/gif/computer_90s" alt="Computer" class="retro-gif">
+                <h2 class="rainbow-text">Welcome to pinterest!</h2>
+                <marquee>🌟 The coolest place to pin your favorite images... 90's style! 🌟</marquee>
+                <img src="https://gifcities.org/api/gif/line_fire" alt="Flame Line" class="flame-line">
+            </div>
+
+            <div id="pinGrid" class="pin-grid"></div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-icons">
+                    <img src="https://gifcities.org/api/gif/mail" alt="Mail" class="footer-icon">
+                    <img src="https://gifcities.org/api/gif/new" alt="New" class="footer-icon blink">
+                </div>
+                <p>© 1995 RetroPins - Best viewed in Netscape Navigator</p>
+                <p class="visitor-count"><span class="blink">●</span> Online visitors: 1,337</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/pins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

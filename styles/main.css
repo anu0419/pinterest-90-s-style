@@ -1,0 +1,176 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'MS Sans Serif', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("C:/my projects/pinterest/images/4f0ab856-3bac-490c-8195-dd749d5e4b50.webp") no-repeat center center fixed; 
+    cursor: default;
+    background-size: cover; 
+    background-attachment: fixed
+     
+    }
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px; /* Grid size */
+    pointer-events: none; /* Allow clicks to go through */
+}
+body::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 60%);
+    pointer-events: none; /* Allow clicks through */
+    animation: moveLight 8s infinite linear;
+}
+@keyframes moveLight {
+    from {
+        transform: translate(-30%, -30%);
+    }
+    to {
+        transform: translate(30%,-30%);
+    }
+}
+  
+
+/* Windows 95 Header */
+.win95-header {
+    background: #c0c0c0;
+    border-bottom: 4px solid #808080;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    background: #000080;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Construction Banner */
+.construction-banner {
+    background: repeating-linear-gradient(
+        45deg,
+        #ffd700,
+        #ffd700 10px,
+        #000000 10px,
+        #000000 20px
+    );
+    padding: 4px;
+    border: 2px solid #000000;
+    color: white;
+    font-weight: bold;
+}
+
+/* Welcome Box */
+.welcome-box {
+    background: #c0c0c0;
+    border: 4px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Pin Grid */
+.pin-grid {
+    columns: 4 250px;
+    column-gap: 1rem;
+    padding: 1rem;
+}
+
+.pin {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    background: white;
+    border: 4px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    padding: 0.5rem;
+}
+
+.pin img {
+    width: 100%;
+    height: auto;
+}
+
+.pin-title {
+    color: #000080;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.pin-stats {
+    display: flex;
+    justify-content: space-between;
+    color: #404040;
+    font-size: 0.875rem;
+}
+
+/* Footer */
+footer {
+    background: #c0c0c0;
+    border-top: 4px solid #ffffff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.visitor-count {
+    font-size: 0.875rem;
+}
+
+/* Windows 95 Button */
+.win95-button {
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    box-shadow: 1px 1px 0px #000000;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.win95-button:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+    box-shadow: -1px -1px 0px #000000;
+    transform: translate(1px, 1px);
+}
+
+/* Utility Classes */
+.hidden {
+    display: none !important;
+}
